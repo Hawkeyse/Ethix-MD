@@ -39,7 +39,7 @@ const tourl = async (m, gss) => {
       scale: '100%',
       outputFile: outputFilePath
     }).then(async () => {
-      gss.sendMessage(m.from, { image: fs.readFileSync(outputFilePath), caption: `> Hey ${m.pushName} Your picture Background Romoved Sucessfully` }, { quoted: m });
+      gss.sendMessage(m.from, { image: fs.readFileSync(outputFilePath), caption: `> Hey ${m.pushName} Your picture background has been successfully removed.` }, { quoted: m });
       fs.unlinkSync(localFilePath);
       fs.unlinkSync(outputFilePath);
     }).catch(error => {
