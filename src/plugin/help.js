@@ -91,17 +91,17 @@ let mode = ethix.public ? 'public' : 'private';
           interactiveMessage: proto.Message.InteractiveMessage.create({
             body: proto.Message.InteractiveMessage.Body.create({
               text: `╭─────────────━┈⊷
-│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *ᴇᴛʜɪx-ᴍᴅ*
+│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *TribalGamerNetwork*
 │📍 ᴠᴇʀꜱɪᴏɴ: 2.0.3
-│👨‍💻 ᴏᴡɴᴇʀ : *ᴇᴛʜɪx xsɪᴅ*      
-│👤 ɴᴜᴍʙᴇʀ: 919142294671
+│👨‍💻 ᴏᴡɴᴇʀ : *Timtech*      
+│👤 ɴᴜᴍʙᴇʀ: 233595885532
 │📡 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
 │🛡 ᴍᴏᴅᴇ: *${mode}*
 │💫 ᴘʀᴇғɪx: *[Multi-Prefix]*
 ╰─────────────━┈⊷ `
             }),
             footer: proto.Message.InteractiveMessage.Footer.create({
-              text: "© Powered By Ethix-MD"
+              text: "© Powered by Timtech"
             }),
             header: proto.Message.InteractiveMessage.Header.create({
                 ...(await prepareWAMessageMedia({ image : fs.readFileSync('./src/ethix.jpg')}, { upload: Matrix.waUploadToServer})), 
@@ -208,10 +208,10 @@ let mode = ethix.public ? 'public' : 'private';
         const mode = process.env.MODE;
         const str = `hey ${m.pushName} ${pushwish}
 ╭─────────────━┈⊷
-│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *ᴇᴛʜɪx-ᴍᴅ*
+│🤖 ʙᴏᴛ ɴᴀᴍᴇ: *TribalGamerNetwork*
 │📍 ᴠᴇʀꜱɪᴏɴ: 2.0.3
-│👨‍💻 ᴏᴡɴᴇʀ : *ᴇᴛʜɪx xsɪᴅ*      
-│👤 ɴᴜᴍʙᴇʀ: 919142294671
+│👨‍💻 ᴏᴡɴᴇʀ : *timtech*      
+│👤 ɴᴜᴍʙᴇʀ: 233595885532
 │💻 ᴘʟᴀᴛғᴏʀᴍ: *${os.platform()}*
 │🛡 ᴍᴏᴅᴇ: *${mode}*
 │💫 ᴘʀᴇғɪx: *[Multi-Prefix]*
@@ -324,7 +324,7 @@ let mode = ethix.public ? 'public' : 'private';
             },
             message: {
                 contactMessage: {
-                    displayName: `Ethix-MD`,
+                    displayName: `TribalGamerNetwork`,
                     vcard: `BEGIN:VCARD\nVERSION:3.0\nN:;a,;;;\nFN:'Ethix-MD'\nitem1.TEL;waid=${
                         m.sender.split("@")[0]
                     }:${
