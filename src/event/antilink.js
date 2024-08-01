@@ -71,7 +71,7 @@ export const handleAntilink = async (m, sock, logger, isBotAdmins, isAdmins, isC
 
             // Send warning message first
             await sock.sendMessage(m.from, {
-                text: `\`\`\`「 Group Link Detected 」\`\`\`\n\n@${m.sender.split("@")[0]}, please do not share group links in this group.`,
+                text: `\`\`\`「 Group Link Detected 」\`\`\`\n\n@${m.sender.split("@")[0]},If spamming was air, you'd be the pollution choking up the Internet. NO LINKS!`,
                 contextInfo: { mentionedJid: [m.sender] }
             }, { quoted: m });
 
